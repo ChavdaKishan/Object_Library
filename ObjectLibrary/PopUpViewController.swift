@@ -43,6 +43,23 @@ class PopUpViewController: UIViewController
         }
     }
     
+    @IBAction func Facebook(_ sender: Any)
+    {
+        let fbvc = self.storyboard?.instantiateViewController(withIdentifier: "WebView") as! WebViewViewController
+        
+        self.present(fbvc, animated: true, completion: nil)
+    }
+    
+    @IBAction func Google(_ sender: Any)
+    {
+        
+    }
+    
+    @IBAction func Gmail(_ sender: Any)
+    {
+        
+    }
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()

@@ -182,22 +182,32 @@
                                         <state key="normal" title="Facebook">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Facebook:" destination="FyH-u9-2lp" eventType="touchUpInside" id="GvN-h2-m18"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgl-fF-vFO" userLabel="2">
-                                        <rect key="frame" x="-0.5" y="67" width="187.5" height="67"/>
+                                        <rect key="frame" x="0.0" y="67" width="187.5" height="67"/>
                                         <color key="backgroundColor" red="1" green="0.33297075860000003" blue="0.23765643819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="Google">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Facebook:" destination="FyH-u9-2lp" eventType="touchUpInside" id="GvV-ch-92P"/>
+                                            <action selector="Google:" destination="FyH-u9-2lp" eventType="touchUpInside" id="Nbe-Ow-BSr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmw-MN-JNu" userLabel="3">
-                                        <rect key="frame" x="-0.5" y="134" width="187.5" height="67"/>
+                                        <rect key="frame" x="0.0" y="134" width="187.5" height="67"/>
                                         <color key="backgroundColor" red="1" green="0.33297075860000003" blue="0.23765643819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="Gmail">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Gmail:" destination="FyH-u9-2lp" eventType="touchUpInside" id="7jX-5B-JJX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -239,6 +249,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLm-jf-y6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3263" y="-119"/>
+        </scene>
+        <!--Web View View Controller-->
+        <scene sceneID="O43-9Y-bWj">
+            <objects>
+                <viewController storyboardIdentifier="WebView" id="MOq-xf-1wp" customClass="WebViewViewController" customModule="ObjectLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M2Y-Y6-szo"/>
+                        <viewControllerLayoutGuide type="bottom" id="gag-at-t4w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="37Y-MA-DZ4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKe-bC-uFC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="67"/>
+                                <items>
+                                    <navigationItem title="Web View" id="NdY-cm-1fH">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="0cD-Sh-1oh">
+                                            <connections>
+                                                <action selector="Back:" destination="MOq-xf-1wp" id="QTU-j1-qDi"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hbr-Ca-06z">
+                                <rect key="frame" x="0.0" y="87" width="375" height="580"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hbr-Ca-06z" firstAttribute="leading" secondItem="37Y-MA-DZ4" secondAttribute="leading" id="3y5-dy-fdT"/>
+                            <constraint firstItem="aKe-bC-uFC" firstAttribute="trailing" secondItem="37Y-MA-DZ4" secondAttribute="trailing" id="LZ9-tq-1uA"/>
+                            <constraint firstItem="Hbr-Ca-06z" firstAttribute="trailing" secondItem="37Y-MA-DZ4" secondAttribute="trailing" id="dHC-cS-HX5"/>
+                            <constraint firstItem="aKe-bC-uFC" firstAttribute="leading" secondItem="37Y-MA-DZ4" secondAttribute="leading" id="hA8-BA-Up7"/>
+                            <constraint firstItem="aKe-bC-uFC" firstAttribute="height" secondItem="37Y-MA-DZ4" secondAttribute="height" multiplier="0.1" id="js9-MB-eVg"/>
+                            <constraint firstItem="Hbr-Ca-06z" firstAttribute="top" secondItem="aKe-bC-uFC" secondAttribute="bottom" id="rZl-YE-lrD"/>
+                            <constraint firstItem="gag-at-t4w" firstAttribute="top" secondItem="Hbr-Ca-06z" secondAttribute="bottom" id="t9r-ko-uL3"/>
+                            <constraint firstItem="aKe-bC-uFC" firstAttribute="top" secondItem="M2Y-Y6-szo" secondAttribute="bottom" id="w3u-zh-7ek"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="UiWebView" destination="Hbr-Ca-06z" id="tOU-qa-aLD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6w-tC-wrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4006" y="-119"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gE7-ta-MZr">
