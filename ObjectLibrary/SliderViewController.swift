@@ -8,8 +8,8 @@
 
 import UIKit
 
-class SliderViewController: UIViewController {
-
+class SliderViewController: UIViewController
+{
     @IBOutlet weak var Label: UILabel!
     @IBOutlet weak var Slider: UISlider!
     @IBOutlet weak var Label2: UILabel!
@@ -29,12 +29,12 @@ class SliderViewController: UIViewController {
         Label2.text = String(Slider.value)
     }
     
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -44,5 +44,4 @@ class SliderViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

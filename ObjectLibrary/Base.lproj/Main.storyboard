@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pb-TZ-ajF">
-                                <rect key="frame" x="147" y="93" width="81" height="36"/>
+                                <rect key="frame" x="147" y="72" width="81" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Slider"/>
                                 <connections>
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9o6-Db-2ZM">
-                                <rect key="frame" x="147" y="174" width="81" height="36"/>
+                                <rect key="frame" x="147" y="130" width="81" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Alert"/>
                                 <connections>
@@ -39,11 +39,27 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpf-mD-18H">
-                                <rect key="frame" x="147" y="249" width="81" height="36"/>
+                                <rect key="frame" x="147" y="188" width="81" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="PopUp"/>
                                 <connections>
                                     <action selector="PopUpClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yvM-WH-b1B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uel-0v-6HL">
+                                <rect key="frame" x="147" y="242" width="81" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Switch"/>
+                                <connections>
+                                    <action selector="SwitchClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q2S-NO-LmL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6D-1Z-OZZ">
+                                <rect key="frame" x="147" y="300" width="81" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Segment"/>
+                                <connections>
+                                    <action selector="SegmentClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fx6-7A-WAi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1045.5999999999999" y="-119.1904047976012"/>
+            <point key="canvasLocation" x="961" y="-814"/>
         </scene>
         <!--Slider View Controller-->
         <scene sceneID="K6B-Yi-qZ0">
@@ -99,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0b-w1-GRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1794" y="-119"/>
+            <point key="canvasLocation" x="1698" y="-814"/>
         </scene>
         <!--Alert View Controller-->
         <scene sceneID="jWZ-jl-TvD">
@@ -135,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xC-6K-zNT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2520.8000000000002" y="-119.1904047976012"/>
+            <point key="canvasLocation" x="2450" y="-814"/>
         </scene>
         <!--Pop Up View Controller-->
         <scene sceneID="Ghg-OD-624">
@@ -194,7 +210,6 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="Facebook:" destination="FyH-u9-2lp" eventType="touchUpInside" id="GvV-ch-92P"/>
                                             <action selector="Google:" destination="FyH-u9-2lp" eventType="touchUpInside" id="Nbe-Ow-BSr"/>
                                         </connections>
                                     </button>
@@ -248,7 +263,157 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLm-jf-y6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3263" y="-119"/>
+            <point key="canvasLocation" x="961" y="-119"/>
+        </scene>
+        <!--Segment View Controller-->
+        <scene sceneID="G38-hT-L7O">
+            <objects>
+                <viewController storyboardIdentifier="SegmentView" id="9tL-CJ-y7Z" customClass="SegmentViewController" customModule="ObjectLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SCR-Xb-3KX"/>
+                        <viewControllerLayoutGuide type="bottom" id="Www-jf-pcu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kBq-0g-bHV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BP2-iW-1Z5">
+                                <rect key="frame" x="0.0" y="20" width="375" height="29"/>
+                                <segments>
+                                    <segment title="Private"/>
+                                    <segment title="Mutual Friend"/>
+                                    <segment title="All"/>
+                                </segments>
+                                <connections>
+                                    <action selector="SegmentClick:" destination="9tL-CJ-y7Z" eventType="valueChanged" id="OS0-Mv-0RX"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WOk-8g-4OX">
+                                <rect key="frame" x="0.0" y="48" width="375" height="619"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCell" id="NOd-tc-T1K">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NOd-tc-T1K" id="ru0-wi-npp">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9tL-CJ-y7Z" id="fJt-yk-oBz"/>
+                                    <outlet property="delegate" destination="9tL-CJ-y7Z" id="Fg2-bf-iLJ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Www-jf-pcu" firstAttribute="top" secondItem="WOk-8g-4OX" secondAttribute="bottom" id="DPW-us-QeM"/>
+                            <constraint firstItem="WOk-8g-4OX" firstAttribute="top" secondItem="BP2-iW-1Z5" secondAttribute="bottom" id="LlZ-PV-mhT"/>
+                            <constraint firstItem="BP2-iW-1Z5" firstAttribute="trailing" secondItem="kBq-0g-bHV" secondAttribute="trailing" id="NZc-jO-dB5"/>
+                            <constraint firstItem="WOk-8g-4OX" firstAttribute="leading" secondItem="kBq-0g-bHV" secondAttribute="leading" id="YlC-cX-7Ig"/>
+                            <constraint firstItem="WOk-8g-4OX" firstAttribute="trailing" secondItem="kBq-0g-bHV" secondAttribute="trailing" id="cDD-q2-3nb"/>
+                            <constraint firstItem="BP2-iW-1Z5" firstAttribute="top" secondItem="SCR-Xb-3KX" secondAttribute="bottom" id="jWu-yh-XvK"/>
+                            <constraint firstItem="BP2-iW-1Z5" firstAttribute="leading" secondItem="kBq-0g-bHV" secondAttribute="leading" id="rqJ-Tf-Cik"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Segment" destination="BP2-iW-1Z5" id="zhf-0D-TAd"/>
+                        <outlet property="TableView" destination="WOk-8g-4OX" id="Qm6-9P-doj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfr-LZ-IL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961" y="598"/>
+        </scene>
+        <!--Switch View Controller-->
+        <scene sceneID="JvZ-wr-SJD">
+            <objects>
+                <viewController storyboardIdentifier="SwitchView" id="axT-A3-E6p" customClass="SwitchViewController" customModule="ObjectLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9n2-Nt-tJ6"/>
+                        <viewControllerLayoutGuide type="bottom" id="1wF-QX-fW7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1MQ-ai-Ekb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do You Want Pizza ?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdF-3T-XNu">
+                                <rect key="frame" x="16" y="37" width="212" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do You Want Dhosa ?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogo-Ao-bvh">
+                                <rect key="frame" x="16" y="154" width="223" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do You Want Sandwitch ?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfN-Ax-4dk">
+                                <rect key="frame" x="16" y="94" width="268" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yes! I Want Pizza!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHi-Eu-2Qr">
+                                <rect key="frame" x="95" y="295" width="185" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yes! I Want Sandwitch!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INF-Qn-ZcP">
+                                <rect key="frame" x="67" y="353" width="241" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cmp-6O-Wge">
+                                <rect key="frame" x="310" y="37" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="SwitchPizza:" destination="axT-A3-E6p" eventType="valueChanged" id="b25-mW-H6C"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kr0-Bo-hi6">
+                                <rect key="frame" x="310" y="92" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="SwitchSandwitch:" destination="axT-A3-E6p" eventType="valueChanged" id="zmg-Au-uJt"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wJJ-fZ-UqF">
+                                <rect key="frame" x="310" y="150" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="SwitchDhosa:" destination="axT-A3-E6p" eventType="valueChanged" id="liQ-Oh-ThS"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yes! I Want Dhosa!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3T-D0-ygW">
+                                <rect key="frame" x="89" y="413" width="196" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="YesDhosa" destination="D3T-D0-ygW" id="pYh-u0-fcE"/>
+                        <outlet property="YesPizza" destination="gHi-Eu-2Qr" id="fbA-UI-aGn"/>
+                        <outlet property="YesSandwitch" destination="INF-Qn-ZcP" id="jgY-nT-J0D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1mK-x0-fGs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2448.8000000000002" y="-119.1904047976012"/>
         </scene>
         <!--Web View View Controller-->
         <scene sceneID="O43-9Y-bWj">
@@ -297,7 +462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s6w-tC-wrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4006" y="-119"/>
+            <point key="canvasLocation" x="1697" y="-119"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gE7-ta-MZr">
@@ -315,7 +480,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lg1-ZA-hrO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="306" y="-119"/>
+            <point key="canvasLocation" x="220" y="-813"/>
         </scene>
     </scenes>
 </document>

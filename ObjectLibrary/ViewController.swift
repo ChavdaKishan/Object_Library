@@ -34,6 +34,23 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(popup1, animated: true)
     }
     
+    @IBAction func SwitchClick(_ sender: Any)
+    {
+        let switchbtn = self.storyboard?.instantiateViewController(withIdentifier: "SwitchView") as! SwitchViewController
+        self.navigationController?.pushViewController(switchbtn, animated: true)
+    }
+    
+    
+    @IBAction func SegmentClick(_ sender: Any) {
+        
+        
+        let segmentbtn = self.storyboard?.instantiateViewController(withIdentifier: "SegmentView") as! SegmentViewController
+        self.navigationController?.pushViewController(segmentbtn, animated: true)
+        
+        
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -26,6 +26,7 @@ class PopUpViewController: UIViewController
         Btn2.layer.borderColor = UIColor.black.cgColor
         Btn3.layer.borderWidth = 1
         Btn3.layer.borderColor = UIColor.black.cgColor
+        
         PopupView.isHidden = true
         
         // Do any additional setup after loading the view.

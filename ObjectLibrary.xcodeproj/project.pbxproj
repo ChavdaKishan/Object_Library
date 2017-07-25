@@ -15,7 +15,9 @@
 		4C14C36C1F18C28B00125F09 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14C36B1F18C28B00125F09 /* SliderViewController.swift */; };
 		4C14C36E1F18C60800125F09 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14C36D1F18C60800125F09 /* AlertViewController.swift */; };
 		4C14C3701F18CFA900125F09 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14C36F1F18CFA900125F09 /* PopUpViewController.swift */; };
+		4C1FCD411F27669200C88C3B /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1FCD401F27669200C88C3B /* SegmentViewController.swift */; };
 		4C6C3C4A1F1A1FC700D3BD1C /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6C3C491F1A1FC700D3BD1C /* WebViewViewController.swift */; };
+		4CF89E191F1CE5120011F39D /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF89E181F1CE5120011F39D /* SwitchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 		4C14C36B1F18C28B00125F09 /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		4C14C36D1F18C60800125F09 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		4C14C36F1F18CFA900125F09 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		4C1FCD401F27669200C88C3B /* SegmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
 		4C6C3C491F1A1FC700D3BD1C /* WebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		4CF89E181F1CE5120011F39D /* SwitchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 			children = (
 				4C14C3591F18C20100125F09 /* AppDelegate.swift */,
 				4C14C35D1F18C20100125F09 /* Main.storyboard */,
+				4C1FCD401F27669200C88C3B /* SegmentViewController.swift */,
+				4CF89E181F1CE5120011F39D /* SwitchViewController.swift */,
 				4C6C3C491F1A1FC700D3BD1C /* WebViewViewController.swift */,
 				4C14C36F1F18CFA900125F09 /* PopUpViewController.swift */,
 				4C14C36D1F18C60800125F09 /* AlertViewController.swift */,
@@ -148,12 +154,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1FCD411F27669200C88C3B /* SegmentViewController.swift in Sources */,
 				4C14C3701F18CFA900125F09 /* PopUpViewController.swift in Sources */,
 				4C14C36C1F18C28B00125F09 /* SliderViewController.swift in Sources */,
 				4C14C35C1F18C20100125F09 /* ViewController.swift in Sources */,
 				4C14C35A1F18C20100125F09 /* AppDelegate.swift in Sources */,
 				4C6C3C4A1F1A1FC700D3BD1C /* WebViewViewController.swift in Sources */,
 				4C14C36E1F18C60800125F09 /* AlertViewController.swift in Sources */,
+				4CF89E191F1CE5120011F39D /* SwitchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
