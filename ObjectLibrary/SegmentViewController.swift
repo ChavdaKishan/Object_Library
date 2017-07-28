@@ -8,8 +8,8 @@
 
 import UIKit
 
-class SegmentViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-
+class SegmentViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
+{
     @IBOutlet weak var Segment: UISegmentedControl!
     @IBOutlet weak var TableView: UITableView!
     
