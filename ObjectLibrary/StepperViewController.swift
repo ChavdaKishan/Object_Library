@@ -1,40 +1,36 @@
 //
-//  CollectionViewController.swift
+//  StepperViewController.swift
 //  ObjectLibrary
 //
-//  Created by iFlame on 7/28/17.
+//  Created by iFlame on 7/29/17.
 //  Copyright © 2017 iFlame. All rights reserved.
 //
 
 import UIKit
 
-class CollectionViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource
+class StepperViewController: UIViewController
 {
-    var arr : [String] = ["1","2","3","4","5","6","7","8","9","10","11","12","13"]
+    @IBOutlet weak var Lbl: UILabel!
+    @IBAction func Stepper(_ sender: UIStepper)
+    {
+        Lbl.text = String(sender.value)
+    }
+    
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
-    {
-        return arr.count
-    }
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
-    {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! Mycell
-        cell.MyImageView.image = UIImage(named: arr[indexPath.row] + ".jpg")
-        return cell
-    }
-    
+
     /*
     // MARK: - Navigation
 
@@ -44,4 +40,5 @@ class CollectionViewController: UIViewController,UICollectionViewDelegate,UIColl
         // Pass the selected object to the new view controller.
     }
     */
+
 }

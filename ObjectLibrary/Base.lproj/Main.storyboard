@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pb-TZ-ajF">
-                                <rect key="frame" x="147" y="72" width="81" height="36"/>
+                                <rect key="frame" x="16" y="72" width="81" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Slider"/>
                                 <connections>
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9o6-Db-2ZM">
-                                <rect key="frame" x="147" y="130" width="81" height="36"/>
+                                <rect key="frame" x="147" y="72" width="81" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Alert"/>
                                 <connections>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpf-mD-18H">
-                                <rect key="frame" x="147" y="188" width="81" height="36"/>
+                                <rect key="frame" x="16" y="142" width="81" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="PopUp"/>
                                 <connections>
@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uel-0v-6HL">
-                                <rect key="frame" x="147" y="242" width="81" height="36"/>
+                                <rect key="frame" x="278" y="72" width="81" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Switch"/>
                                 <connections>
@@ -55,7 +55,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6D-1Z-OZZ">
-                                <rect key="frame" x="147" y="300" width="81" height="36"/>
+                                <rect key="frame" x="147" y="142" width="81" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Segment"/>
                                 <connections>
@@ -63,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXW-o6-LIr">
-                                <rect key="frame" x="147" y="353" width="81" height="36"/>
+                                <rect key="frame" x="278" y="142" width="81" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Scroll"/>
                                 <connections>
@@ -71,11 +71,27 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxN-cr-8QR">
-                                <rect key="frame" x="147" y="411" width="81" height="36"/>
+                                <rect key="frame" x="16" y="218" width="81" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Collection"/>
                                 <connections>
                                     <action selector="CollectioClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sYi-Ds-553"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnt-Cd-HkU">
+                                <rect key="frame" x="147" y="218" width="81" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stepper"/>
+                                <connections>
+                                    <action selector="StepperClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9um-FN-AjX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeA-uw-gvp">
+                                <rect key="frame" x="278" y="218" width="81" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Progress"/>
+                                <connections>
+                                    <action selector="ProgressClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vgL-N1-q2k"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="961" y="-814"/>
+            <point key="canvasLocation" x="960.79999999999995" y="-814.54272863568224"/>
         </scene>
         <!--Slider View Controller-->
         <scene sceneID="K6B-Yi-qZ0">
@@ -216,6 +232,7 @@
                                         </state>
                                         <connections>
                                             <action selector="Facebook:" destination="FyH-u9-2lp" eventType="touchUpInside" id="GvN-h2-m18"/>
+                                            <action selector="FacebookClick:" destination="FyH-u9-2lp" eventType="touchUpInside" id="LIb-g1-0aI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgl-fF-vFO" userLabel="2">
@@ -227,6 +244,7 @@
                                         </state>
                                         <connections>
                                             <action selector="Google:" destination="FyH-u9-2lp" eventType="touchUpInside" id="Nbe-Ow-BSr"/>
+                                            <action selector="GoogleClick:" destination="FyH-u9-2lp" eventType="touchUpInside" id="1qP-sK-5hs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmw-MN-JNu" userLabel="3">
@@ -238,6 +256,7 @@
                                         </state>
                                         <connections>
                                             <action selector="Gmail:" destination="FyH-u9-2lp" eventType="touchUpInside" id="7jX-5B-JJX"/>
+                                            <action selector="GmailClick:" destination="FyH-u9-2lp" eventType="touchUpInside" id="7Hu-GH-zXh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -279,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLm-jf-y6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="961" y="-119"/>
+            <point key="canvasLocation" x="1697" y="-119"/>
         </scene>
         <!--Segment View Controller-->
         <scene sceneID="G38-hT-L7O">
@@ -341,7 +360,71 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vfr-LZ-IL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="961" y="598"/>
+            <point key="canvasLocation" x="2449" y="-119"/>
+        </scene>
+        <!--Stepper View Controller-->
+        <scene sceneID="T1a-YD-Yiy">
+            <objects>
+                <viewController storyboardIdentifier="StepperView" id="2ab-SL-ZzD" customClass="StepperViewController" customModule="ObjectLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oZb-q5-IRR"/>
+                        <viewControllerLayoutGuide type="bottom" id="941-wm-lvx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fE4-ru-pek">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTy-X5-x9g">
+                                <rect key="frame" x="123" y="164" width="128" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Fno-3U-PCR">
+                                <rect key="frame" x="140" y="75" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Stepper:" destination="2ab-SL-ZzD" eventType="valueChanged" id="zVj-yz-EkD"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="Lbl" destination="BTy-X5-x9g" id="ZN8-Mg-lVH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iJW-F6-Wwg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2449" y="591"/>
+        </scene>
+        <!--Progress View Controller-->
+        <scene sceneID="Qp0-d3-WAa">
+            <objects>
+                <viewController storyboardIdentifier="ProgressView" id="wDn-PP-iwp" customClass="ProgressViewController" customModule="ObjectLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ax9-1E-gBB"/>
+                        <viewControllerLayoutGuide type="bottom" id="dEg-QS-fea"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JB3-Wj-f1V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LO2-8p-sWT">
+                                <rect key="frame" x="16" y="270" width="343" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="Progress" destination="LO2-8p-sWT" id="9qR-Nd-OhV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJi-Ao-XfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3198" y="591"/>
         </scene>
         <!--Scroll View Controller-->
         <scene sceneID="dwb-PQ-L70">
@@ -359,7 +442,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8n-Lm-dHY">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="717"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1167"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11111Q33N3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xIP-AR-60Z">
                                                 <rect key="frame" x="37" y="59" width="300" height="400"/>
@@ -381,13 +464,13 @@
                                                 <rect key="frame" x="16" y="605" width="343" height="50"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="RePassword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fhP-wi-CU6">
                                                 <rect key="frame" x="16" y="687" width="343" height="50"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -419,7 +502,7 @@
                         <color key="backgroundColor" red="1" green="0.098580574099999999" blue="0.95961443229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7vd-6a-yGH" firstAttribute="top" secondItem="xBI-Pp-7Q1" secondAttribute="bottom" id="E7K-47-99v"/>
-                            <constraint firstItem="D8n-Lm-dHY" firstAttribute="height" secondItem="hJi-PK-LgS" secondAttribute="height" constant="50" id="NYt-Hc-CSY"/>
+                            <constraint firstItem="D8n-Lm-dHY" firstAttribute="height" secondItem="hJi-PK-LgS" secondAttribute="height" constant="500" id="NYt-Hc-CSY"/>
                             <constraint firstItem="7vd-6a-yGH" firstAttribute="trailing" secondItem="hJi-PK-LgS" secondAttribute="trailing" id="Ox6-cI-sz2"/>
                             <constraint firstItem="7vd-6a-yGH" firstAttribute="bottom" secondItem="MgZ-Un-IJe" secondAttribute="top" id="sgh-NH-aai"/>
                             <constraint firstItem="7vd-6a-yGH" firstAttribute="leading" secondItem="hJi-PK-LgS" secondAttribute="leading" id="wVl-Wf-tq2"/>
@@ -428,7 +511,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ExV-31-S2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1696.8" y="597.75112443778119"/>
+            <point key="canvasLocation" x="3198" y="-119"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="dr5-2G-BwP">
@@ -488,7 +571,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ADh-h4-HfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2448.8000000000002" y="597.75112443778119"/>
+            <point key="canvasLocation" x="1697" y="591"/>
         </scene>
         <!--Switch View Controller-->
         <scene sceneID="JvZ-wr-SJD">
@@ -576,56 +659,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mK-x0-fGs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2448.8000000000002" y="-119.1904047976012"/>
-        </scene>
-        <!--Web View View Controller-->
-        <scene sceneID="O43-9Y-bWj">
-            <objects>
-                <viewController storyboardIdentifier="WebView" id="MOq-xf-1wp" customClass="WebViewViewController" customModule="ObjectLibrary" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="M2Y-Y6-szo"/>
-                        <viewControllerLayoutGuide type="bottom" id="gag-at-t4w"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="37Y-MA-DZ4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKe-bC-uFC">
-                                <rect key="frame" x="0.0" y="20" width="375" height="67"/>
-                                <items>
-                                    <navigationItem title="Web View" id="NdY-cm-1fH">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="0cD-Sh-1oh">
-                                            <connections>
-                                                <action selector="Back:" destination="MOq-xf-1wp" id="QTU-j1-qDi"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hbr-Ca-06z">
-                                <rect key="frame" x="0.0" y="87" width="375" height="580"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Hbr-Ca-06z" firstAttribute="leading" secondItem="37Y-MA-DZ4" secondAttribute="leading" id="3y5-dy-fdT"/>
-                            <constraint firstItem="aKe-bC-uFC" firstAttribute="trailing" secondItem="37Y-MA-DZ4" secondAttribute="trailing" id="LZ9-tq-1uA"/>
-                            <constraint firstItem="Hbr-Ca-06z" firstAttribute="trailing" secondItem="37Y-MA-DZ4" secondAttribute="trailing" id="dHC-cS-HX5"/>
-                            <constraint firstItem="aKe-bC-uFC" firstAttribute="leading" secondItem="37Y-MA-DZ4" secondAttribute="leading" id="hA8-BA-Up7"/>
-                            <constraint firstItem="aKe-bC-uFC" firstAttribute="height" secondItem="37Y-MA-DZ4" secondAttribute="height" multiplier="0.1" id="js9-MB-eVg"/>
-                            <constraint firstItem="Hbr-Ca-06z" firstAttribute="top" secondItem="aKe-bC-uFC" secondAttribute="bottom" id="rZl-YE-lrD"/>
-                            <constraint firstItem="gag-at-t4w" firstAttribute="top" secondItem="Hbr-Ca-06z" secondAttribute="bottom" id="t9r-ko-uL3"/>
-                            <constraint firstItem="aKe-bC-uFC" firstAttribute="top" secondItem="M2Y-Y6-szo" secondAttribute="bottom" id="w3u-zh-7ek"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="UiWebView" destination="Hbr-Ca-06z" id="tOU-qa-aLD"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s6w-tC-wrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1697" y="-119"/>
+            <point key="canvasLocation" x="3198" y="-814"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gE7-ta-MZr">

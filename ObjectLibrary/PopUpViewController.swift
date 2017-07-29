@@ -46,9 +46,7 @@ class PopUpViewController: UIViewController
     
     @IBAction func Facebook(_ sender: Any)
     {
-        let fbvc = self.storyboard?.instantiateViewController(withIdentifier: "WebView") as! WebViewViewController
         
-        self.present(fbvc, animated: true, completion: nil)
     }
     
     @IBAction func Google(_ sender: Any)
@@ -61,6 +59,44 @@ class PopUpViewController: UIViewController
         
     }
     
+    @IBAction func FacebookClick(_ sender: Any)
+    {
+        let url = URL(string: "https://www.facebook.com")
+        if UIApplication.shared.canOpenURL(url!)
+        {
+            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+            //If you want handle the completion block than
+            UIApplication.shared.open(url!, options: [:], completionHandler: { (success) in
+                print("Open url : \(success)")
+            })
+        }
+    }
+    
+    @IBAction func GoogleClick(_ sender: Any)
+    {
+        let url = URL(string: "https://www.google.com")
+        if UIApplication.shared.canOpenURL(url!)
+        {
+            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+            //If you want handle the completion block than
+            UIApplication.shared.open(url!, options: [:], completionHandler: { (success) in
+                print("Open url : \(success)")
+            })
+        }
+    }
+    
+    @IBAction func GmailClick(_ sender: Any)
+    {
+        let url = URL(string: "https://www.gmail.com")
+        if UIApplication.shared.canOpenURL(url!)
+        {
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+        //If you want handle the completion block than
+        UIApplication.shared.open(url!, options: [:], completionHandler: { (success) in
+        print("Open url : \(success)")
+        })
+        }
+    }
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()

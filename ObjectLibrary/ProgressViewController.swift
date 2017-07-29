@@ -1,40 +1,38 @@
 //
-//  CollectionViewController.swift
+//  ProgressViewController.swift
 //  ObjectLibrary
 //
-//  Created by iFlame on 7/28/17.
+//  Created by iFlame on 7/29/17.
 //  Copyright © 2017 iFlame. All rights reserved.
 //
 
 import UIKit
 
-class CollectionViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource
+class ProgressViewController: UIViewController
 {
-    var arr : [String] = ["1","2","3","4","5","6","7","8","9","10","11","12","13"]
+
+    @IBOutlet weak var Progress: UIProgressView!
+    
+    var timer = Timer()
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(ProgressViewController.go), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view.
     }
     
+    func go()
+    {
+        Progress.progress += 0.005
+    }
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
-    {
-        return arr.count
-    }
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
-    {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! Mycell
-        cell.MyImageView.image = UIImage(named: arr[indexPath.row] + ".jpg")
-        return cell
-    }
-    
+
     /*
     // MARK: - Navigation
 
@@ -44,4 +42,5 @@ class CollectionViewController: UIViewController,UICollectionViewDelegate,UIColl
         // Pass the selected object to the new view controller.
     }
     */
+
 }

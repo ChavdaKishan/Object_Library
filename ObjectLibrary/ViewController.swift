@@ -28,16 +28,16 @@ class ViewController: UIViewController
         self.navigationController?.pushViewController(alert1, animated: true)
     }
     
-    @IBAction func PopUpClick(_ sender: Any)
-    {
-        let popup1 = self.storyboard?.instantiateViewController(withIdentifier: "PopUpView") as! PopUpViewController
-        self.navigationController?.pushViewController(popup1, animated: true)
-    }
-    
     @IBAction func SwitchClick(_ sender: Any)
     {
         let switchbtn = self.storyboard?.instantiateViewController(withIdentifier: "SwitchView") as! SwitchViewController
         self.navigationController?.pushViewController(switchbtn, animated: true)
+    }
+    
+    @IBAction func PopUpClick(_ sender: Any)
+    {
+        let popup1 = self.storyboard?.instantiateViewController(withIdentifier: "PopUpView") as! PopUpViewController
+        self.navigationController?.pushViewController(popup1, animated: true)
     }
     
     @IBAction func SegmentClick(_ sender: Any)
@@ -57,7 +57,18 @@ class ViewController: UIViewController
         let collectionbtn = self.storyboard?.instantiateViewController(withIdentifier: "CollectionView") as! CollectionViewController
         self.navigationController?.pushViewController(collectionbtn, animated: true)
     }
-
+    
+    @IBAction func StepperClick(_ sender: Any)
+    {
+        let stepperbtn = self.storyboard?.instantiateViewController(withIdentifier: "StepperView") as! StepperViewController
+        self.navigationController?.pushViewController(stepperbtn, animated: true)
+    }
+    
+    @IBAction func ProgressClick(_ sender: Any)
+    {
+        let progressbtn = self.storyboard?.instantiateViewController(withIdentifier: "ProgressView") as! ProgressViewController
+        self.navigationController?.pushViewController(progressbtn, animated: true)
+    }
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
