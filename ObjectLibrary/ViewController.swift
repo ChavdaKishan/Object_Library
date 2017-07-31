@@ -69,6 +69,13 @@ class ViewController: UIViewController
         let progressbtn = self.storyboard?.instantiateViewController(withIdentifier: "ProgressView") as! ProgressViewController
         self.navigationController?.pushViewController(progressbtn, animated: true)
     }
+    
+    @IBAction func IndicatorClick(_ sender: Any)
+    {
+        let indicatorbtn = self.storyboard?.instantiateViewController(withIdentifier: "IndicatorView") as! IndicatorViewController
+        self.navigationController?.pushViewController(indicatorbtn, animated: true)
+    }
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
