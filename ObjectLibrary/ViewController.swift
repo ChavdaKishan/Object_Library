@@ -76,6 +76,12 @@ class ViewController: UIViewController
         self.navigationController?.pushViewController(indicatorbtn, animated: true)
     }
     
+    @IBAction func ScrollWithPageClick(_ sender: Any)
+    {
+        let ScrollPageBtn = self.storyboard?.instantiateViewController(withIdentifier: "ScrollPageView") as! ScrollWithPageViewController
+        self.navigationController?.pushViewController(ScrollPageBtn, animated: true)
+    }
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()

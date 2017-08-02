@@ -103,9 +103,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUY-SE-zxc">
-                                <rect key="frame" x="143" y="287" width="89" height="38"/>
+                                <rect key="frame" x="131" y="287" width="113" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Page Control"/>
+                                <state key="normal" title="Scroll With Page"/>
+                                <connections>
+                                    <action selector="ScrollWithPageClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ho0-GR-3Vd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -311,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLm-jf-y6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1697" y="-119"/>
+            <point key="canvasLocation" x="961" y="-119"/>
         </scene>
         <!--Segment View Controller-->
         <scene sceneID="G38-hT-L7O">
@@ -373,7 +376,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vfr-LZ-IL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2449" y="-119"/>
+            <point key="canvasLocation" x="1697" y="-119"/>
         </scene>
         <!--Stepper View Controller-->
         <scene sceneID="T1a-YD-Yiy">
@@ -410,7 +413,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJW-F6-Wwg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2449" y="591"/>
+            <point key="canvasLocation" x="961" y="591"/>
         </scene>
         <!--Progress View Controller-->
         <scene sceneID="Qp0-d3-WAa">
@@ -437,7 +440,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJi-Ao-XfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3198" y="591"/>
+            <point key="canvasLocation" x="1697" y="591"/>
         </scene>
         <!--Scroll View Controller-->
         <scene sceneID="dwb-PQ-L70">
@@ -524,7 +527,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ExV-31-S2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3198" y="-119"/>
+            <point key="canvasLocation" x="2449" y="-119"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="dr5-2G-BwP">
@@ -584,7 +587,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ADh-h4-HfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1697" y="591"/>
+            <point key="canvasLocation" x="3198" y="-119"/>
         </scene>
         <!--Indicator View Controller-->
         <scene sceneID="crd-gb-XjB">
@@ -655,7 +658,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gMx-7q-VDf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1697" y="1290"/>
+            <point key="canvasLocation" x="2449" y="591"/>
+        </scene>
+        <!--Scroll With Page View Controller-->
+        <scene sceneID="mq2-Kj-IUa">
+            <objects>
+                <viewController storyboardIdentifier="ScrollPageView" id="iIq-Mc-y9m" customClass="ScrollWithPageViewController" customModule="ObjectLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TbW-AV-r8i"/>
+                        <viewControllerLayoutGuide type="bottom" id="RGS-hi-5Gi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7mI-Il-OqT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mtI-WG-IDQ">
+                                <rect key="frame" x="80" y="530" width="215" height="37"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yay-Dc-zYh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yay-Dc-zYh" firstAttribute="top" secondItem="7mI-Il-OqT" secondAttribute="top" id="7qu-61-KEV"/>
+                            <constraint firstItem="mtI-WG-IDQ" firstAttribute="leading" secondItem="7mI-Il-OqT" secondAttribute="leading" constant="80" id="GEB-sY-FrU"/>
+                            <constraint firstItem="mtI-WG-IDQ" firstAttribute="bottom" secondItem="RGS-hi-5Gi" secondAttribute="top" constant="-100" id="Odk-yL-ne4"/>
+                            <constraint firstItem="yay-Dc-zYh" firstAttribute="trailing" secondItem="7mI-Il-OqT" secondAttribute="trailing" id="Vv4-qr-dFl"/>
+                            <constraint firstItem="mtI-WG-IDQ" firstAttribute="trailing" secondItem="7mI-Il-OqT" secondAttribute="trailing" constant="-80" id="hp1-e5-amC"/>
+                            <constraint firstItem="yay-Dc-zYh" firstAttribute="leading" secondItem="7mI-Il-OqT" secondAttribute="leading" id="oEF-vM-Ugy"/>
+                            <constraint firstItem="yay-Dc-zYh" firstAttribute="bottom" secondItem="RGS-hi-5Gi" secondAttribute="top" id="z6w-gr-KTb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PageControll" destination="mtI-WG-IDQ" id="8sq-QN-Ohf"/>
+                        <outlet property="ScrollView" destination="yay-Dc-zYh" id="jF3-hr-3ce"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Psp-4x-tWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3198" y="591"/>
         </scene>
         <!--Switch View Controller-->
         <scene sceneID="JvZ-wr-SJD">
