@@ -22,8 +22,14 @@ class SliderViewController: UIViewController
 
     @IBAction func SliderAction(_ sender: Any)
     {
-        let Font_Size = CGFloat(Slider.value)
+        /*let Font_Size = CGFloat(Slider.value)
         Label.font = UIFont(name: Label.font.fontName, size: Font_Size)
+        Label.sizeToFit()
+        
+        Label2.text = String(Slider.value)
+ */
+        let font = CGFloat(Slider.value)
+        Label.font = UIFont(name: Label.font.fontName, size: font)
         Label.sizeToFit()
         
         Label2.text = String(Slider.value)

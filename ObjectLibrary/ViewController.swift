@@ -82,6 +82,18 @@ class ViewController: UIViewController
         self.navigationController?.pushViewController(ScrollPageBtn, animated: true)
     }
     
+    @IBAction func ContainerBtn(_ sender: Any)
+    {
+        let containerbtn = self.storyboard?.instantiateViewController(withIdentifier: "ContainerView") as! ContainerViewController
+        self.navigationController?.pushViewController(containerbtn, animated: true)
+    }
+    
+    @IBAction func PickerViewClick(_ sender: Any)
+    {
+        let pickerbtn = self.storyboard?.instantiateViewController(withIdentifier: "PickerView") as! PickerViewController
+        self.navigationController?.pushViewController(pickerbtn, animated: true)
+    }
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()

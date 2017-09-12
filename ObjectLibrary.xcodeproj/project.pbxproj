@@ -16,12 +16,14 @@
 		4C14C36E1F18C60800125F09 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14C36D1F18C60800125F09 /* AlertViewController.swift */; };
 		4C14C3701F18CFA900125F09 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14C36F1F18CFA900125F09 /* PopUpViewController.swift */; };
 		4C1FCD411F27669200C88C3B /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1FCD401F27669200C88C3B /* SegmentViewController.swift */; };
+		4C24F6711F5412FF00A45639 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24F6701F5412FF00A45639 /* PickerViewController.swift */; };
 		4C2B74A61F31E0C300AED4BE /* ScrollWithPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B74A51F31E0C300AED4BE /* ScrollWithPageViewController.swift */; };
 		4C2B74A81F31E2B500AED4BE /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2B74A71F31E2B500AED4BE /* Slide.xib */; };
 		4C2B74AA1F31E2CF00AED4BE /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B74A91F31E2CF00AED4BE /* Slide.swift */; };
 		4C8C44CB1F2C78C800A8C97F /* StepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C44CA1F2C78C800A8C97F /* StepperViewController.swift */; };
 		4C8C44CD1F2C8A8600A8C97F /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C44CC1F2C8A8600A8C97F /* ProgressViewController.swift */; };
 		4C9E41471F2F37DC0021A0B4 /* IndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9E41461F2F37DC0021A0B4 /* IndicatorViewController.swift */; };
+		4CEF6FC01F33285500FEDC78 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF6FBF1F33285500FEDC78 /* ContainerViewController.swift */; };
 		4CF255D61F2B29070003F3F0 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF255D51F2B29070003F3F0 /* ScrollViewController.swift */; };
 		4CF255DA1F2B319F0003F3F0 /* 11111Q33N3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CF255D91F2B319F0003F3F0 /* 11111Q33N3.jpg */; };
 		4CF255F51F2B47470003F3F0 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CF255E81F2B47470003F3F0 /* 1.jpg */; };
@@ -54,12 +56,14 @@
 		4C14C36D1F18C60800125F09 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		4C14C36F1F18CFA900125F09 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		4C1FCD401F27669200C88C3B /* SegmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
+		4C24F6701F5412FF00A45639 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		4C2B74A51F31E0C300AED4BE /* ScrollWithPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollWithPageViewController.swift; sourceTree = "<group>"; };
 		4C2B74A71F31E2B500AED4BE /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		4C2B74A91F31E2CF00AED4BE /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		4C8C44CA1F2C78C800A8C97F /* StepperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepperViewController.swift; sourceTree = "<group>"; };
 		4C8C44CC1F2C8A8600A8C97F /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		4C9E41461F2F37DC0021A0B4 /* IndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorViewController.swift; sourceTree = "<group>"; };
+		4CEF6FBF1F33285500FEDC78 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		4CF255D51F2B29070003F3F0 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		4CF255D91F2B319F0003F3F0 /* 11111Q33N3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11111Q33N3.jpg; sourceTree = "<group>"; };
 		4CF255E81F2B47470003F3F0 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 			children = (
 				4C14C3591F18C20100125F09 /* AppDelegate.swift */,
 				4C14C35D1F18C20100125F09 /* Main.storyboard */,
+				4C24F6701F5412FF00A45639 /* PickerViewController.swift */,
+				4CEF6FBF1F33285500FEDC78 /* ContainerViewController.swift */,
 				4C2B74A51F31E0C300AED4BE /* ScrollWithPageViewController.swift */,
 				4C2B74A71F31E2B500AED4BE /* Slide.xib */,
 				4C2B74A91F31E2CF00AED4BE /* Slide.swift */,
@@ -253,11 +259,13 @@
 				4CF256031F2B48FF0003F3F0 /* CollectionViewController.swift in Sources */,
 				4C9E41471F2F37DC0021A0B4 /* IndicatorViewController.swift in Sources */,
 				4C2B74AA1F31E2CF00AED4BE /* Slide.swift in Sources */,
+				4CEF6FC01F33285500FEDC78 /* ContainerViewController.swift in Sources */,
 				4CF256071F2B4C1A0003F3F0 /* Mycell.swift in Sources */,
 				4CF255D61F2B29070003F3F0 /* ScrollViewController.swift in Sources */,
 				4C14C35A1F18C20100125F09 /* AppDelegate.swift in Sources */,
 				4C14C36E1F18C60800125F09 /* AlertViewController.swift in Sources */,
 				4CF89E191F1CE5120011F39D /* SwitchViewController.swift in Sources */,
+				4C24F6711F5412FF00A45639 /* PickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

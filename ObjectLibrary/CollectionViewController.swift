@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class CollectionViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource
 {
     var arr : [String] = ["1","2","3","4","5","6","7","8","9","10","11","12","13"]
@@ -28,7 +27,7 @@ class CollectionViewController: UIViewController,UICollectionViewDelegate,UIColl
     {
         return arr.count
     }
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! Mycell
         cell.MyImageView.image = UIImage(named: arr[indexPath.row] + ".jpg")
@@ -37,7 +36,6 @@ class CollectionViewController: UIViewController,UICollectionViewDelegate,UIColl
     
     /*
     // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
