@@ -94,6 +94,12 @@ class ViewController: UIViewController
         self.navigationController?.pushViewController(pickerbtn, animated: true)
     }
     
+    @IBAction func StackClick(_ sender: Any)
+    {
+        let stackbtn = self.storyboard?.instantiateViewController(withIdentifier: "StackView")
+        self.navigationController?.pushViewController(stackbtn!, animated: true)
+    }
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()

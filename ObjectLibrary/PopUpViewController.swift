@@ -10,7 +10,6 @@ import UIKit
 
 class PopUpViewController: UIViewController
 {
-
     @IBOutlet weak var Btn1: UIButton!
     @IBOutlet weak var Btn2: UIButton!
     @IBOutlet weak var Btn3: UIButton!
@@ -42,21 +41,6 @@ class PopUpViewController: UIViewController
         {
             PopupView.isHidden = true
         }
-    }
-    
-    @IBAction func Facebook(_ sender: Any)
-    {
-        
-    }
-    
-    @IBAction func Google(_ sender: Any)
-    {
-        
-    }
-    
-    @IBAction func Gmail(_ sender: Any)
-    {
-        
     }
     
     @IBAction func FacebookClick(_ sender: Any)
