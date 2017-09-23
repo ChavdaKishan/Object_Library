@@ -93,6 +93,11 @@ class ViewController: UIViewController
         let pickerbtn = self.storyboard?.instantiateViewController(withIdentifier: "PickerView") as! PickerViewController
         self.navigationController?.pushViewController(pickerbtn, animated: true)
     }
+    @IBAction func Picker2Click(_ sender: Any)
+    {
+        let pickerbtn = self.storyboard?.instantiateViewController(withIdentifier: "Picker2") as! Picker2ViewController
+        self.navigationController?.pushViewController(pickerbtn, animated: true)
+    }
     
     @IBAction func StackClick(_ sender: Any)
     {
