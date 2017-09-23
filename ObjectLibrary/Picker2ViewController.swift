@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Picker2ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate
+class Picker2ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate
 {
     @IBOutlet weak var FullNameTxt: UITextField!
     @IBOutlet weak var BirthDateTxt: UITextField!
@@ -28,11 +28,6 @@ class Picker2ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewD
         super.viewDidLoad()
         StatesTxt.delegate = self
         self.datePicker()
-    }
-    
-    @IBAction func BtnClick(_ sender: Any)
-    {
-        
     }
     
     
@@ -61,6 +56,58 @@ class Picker2ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewD
         {
             pickerStates(textfield: textField)
         }
+    }
+    
+    
+    // MARK : - UIImagePickerControllerDelegate
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
+    {
+        if let pickerImae = info[UIImagePickerControllerOriginalImage] as! UIImage?
+        {
+            let newpath : URL?
+            do
+            {
+                let imagePath = FileManager.default.urls(for: FileManager.SearchPathDirectory.desktopDirectory, in: FileManager.SearchPathDomainMask.userDomainMask)
+                let documentDir = imagePath[0]
+                newpath = documentDir.appendingPathComponent("ProfilePic.jpg")
+                let imageData = UIImageJPEGRepresentation(pickerImae, 0.8)
+                print(newpath?.path ?? "Optional")
+                try imageData?.write(to: newpath!)
+            }
+            catch
+            {
+                print(error)
+            }
+            self.ImageProfile.image = UIImage(contentsOfFile: (newpath?.path)!)
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
+    {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    // MARK : - Upload Photo
+    @IBAction func BtnClick(_ sender: Any)
+    {
+        let alert = UIAlertController(title: "User Info", message: "Please Select Any Optin", preferredStyle: .actionSheet)
+        let actionGallery = UIAlertAction(title: "Gallery", style: .default, handler: {
+            action in
+            self.openGallery()
+        })
+        let actionCamera = UIAlertAction(title: "Camera", style: .default, handler: {
+            action in
+            self.openCamera()
+        })
+        let actionCancel = UIAlertAction(title: "Cancel", style: .default, handler: {
+            action in
+            self.dismiss(animated: true, completion: nil)
+        })
+        alert.addAction(actionGallery)
+        alert.addAction(actionCamera)
+        alert.addAction(actionCancel)
+        self.present(alert, animated: true, completion: nil)
     }
     
     
@@ -129,6 +176,28 @@ class Picker2ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewD
     func dtPickerCancelClick()
     {
         self.view.endEditing(true)
+    }
+    func openGallery()
+    {
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary)
+        {
+            let picker = UIImagePickerController()
+            picker.delegate = self
+            picker.sourceType = .photoLibrary
+            picker.allowsEditing = true
+            self.present(picker, animated: true, completion: nil)
+        }
+    }
+    func openCamera()
+    {
+        if UIImagePickerController.isSourceTypeAvailable(.camera)
+        {
+            let picker = UIImagePickerController()
+            picker.delegate = self
+            picker.sourceType = .camera
+            picker.allowsEditing = true
+            self.present(picker, animated: true, completion: nil)
+        }
     }
     
     override func didReceiveMemoryWarning()
