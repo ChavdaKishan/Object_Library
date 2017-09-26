@@ -14,6 +14,7 @@ class Picker2ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewD
     @IBOutlet weak var BirthDateTxt: UITextField!
     @IBOutlet weak var StatesTxt: UITextField!
     @IBOutlet weak var ImageProfile: UIImageView!
+    @IBOutlet weak var UploadBtn: UIButton!
     
     // MARK : - Date Picker
     let dtPicker : UIDatePicker = UIDatePicker()
@@ -62,15 +63,15 @@ class Picker2ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewD
     // MARK : - UIImagePickerControllerDelegate
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
     {
-        if let pickerImae = info[UIImagePickerControllerOriginalImage] as! UIImage?
+        if let pickerImage = info[UIImagePickerControllerOriginalImage] as! UIImage?
         {
             let newpath : URL?
             do
             {
-                let imagePath = FileManager.default.urls(for: FileManager.SearchPathDirectory.desktopDirectory, in: FileManager.SearchPathDomainMask.userDomainMask)
-                let documentDir = imagePath[0]
+                let imagepath = FileManager.default.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask)
+                let documentDir = imagepath[0]
                 newpath = documentDir.appendingPathComponent("ProfilePic.jpg")
-                let imageData = UIImageJPEGRepresentation(pickerImae, 0.8)
+                let imageData = UIImageJPEGRepresentation(pickerImage, 0.8)
                 print(newpath?.path ?? "Optional")
                 try imageData?.write(to: newpath!)
             }
@@ -79,6 +80,7 @@ class Picker2ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewD
                 print(error)
             }
             self.ImageProfile.image = UIImage(contentsOfFile: (newpath?.path)!)
+            self.UploadBtn.setBackgroundImage(UIImage(contentsOfFile: (newpath?.path)!), for: .normal)
         }
         self.dismiss(animated: true, completion: nil)
     }

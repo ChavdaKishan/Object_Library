@@ -1013,9 +1013,12 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXm-oZ-cWB">
-                                <rect key="frame" x="122" y="370" width="130" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <rect key="frame" x="137" y="370" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4YT-B6-bRU"/>
+                                    <constraint firstAttribute="width" constant="100" id="E5l-pb-I5T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="14"/>
                                 <state key="normal" title="Upload Photo">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1046,6 +1049,7 @@
                         <outlet property="FullNameTxt" destination="R10-xb-P0J" id="w2m-Me-bKw"/>
                         <outlet property="ImageProfile" destination="1nx-9N-XQ2" id="YhB-6g-bAn"/>
                         <outlet property="StatesTxt" destination="tM1-2C-Yvh" id="Cye-3P-Ml5"/>
+                        <outlet property="UploadBtn" destination="NXm-oZ-cWB" id="sJI-pA-vqX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmI-48-N83" userLabel="First Responder" sceneMemberID="firstResponder"/>

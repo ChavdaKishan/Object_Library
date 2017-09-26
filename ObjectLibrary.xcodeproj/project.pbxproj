@@ -108,19 +108,11 @@
 				4C14C36D1F18C60800125F09 /* AlertViewController.swift */,
 				4C14C36B1F18C28B00125F09 /* SliderViewController.swift */,
 				4C14C35B1F18C20100125F09 /* ViewController.swift */,
-				4CF255E71F2B47470003F3F0 /* Image */,
 				4C14C3601F18C20100125F09 /* Assets.xcassets */,
 				4C14C3621F18C20100125F09 /* LaunchScreen.storyboard */,
 				4C14C3651F18C20100125F09 /* Info.plist */,
 			);
 			path = ObjectLibrary;
-			sourceTree = "<group>";
-		};
-		4CF255E71F2B47470003F3F0 /* Image */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
