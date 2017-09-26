@@ -105,6 +105,12 @@ class ViewController: UIViewController
         self.navigationController?.pushViewController(stackbtn!, animated: true)
     }
     
+    @IBAction func GestureClick(_ sender: Any)
+    {
+        let gesturebtn = self.storyboard?.instantiateViewController(withIdentifier: "Gesture") as! GestureViewController
+        self.navigationController?.pushViewController(gesturebtn, animated: true)
+    }
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()

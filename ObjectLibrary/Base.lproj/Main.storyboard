@@ -135,11 +135,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6NA-oy-5Pj">
-                                <rect key="frame" x="166" y="358" width="43" height="30"/>
+                                <rect key="frame" x="147" y="354" width="81" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Picker"/>
                                 <connections>
                                     <action selector="Picker2Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bt6-3c-pL1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrm-MU-VuA">
+                                <rect key="frame" x="16" y="417" width="81" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gesture"/>
+                                <connections>
+                                    <action selector="GestureClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nnz-Fq-3Ss"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1134,6 +1142,76 @@
             </objects>
             <point key="canvasLocation" x="961" y="2059"/>
         </scene>
+        <!--Gesture View Controller-->
+        <scene sceneID="JqO-7W-bM9">
+            <objects>
+                <viewController storyboardIdentifier="Gesture" id="Dem-mn-fbz" customClass="GestureViewController" customModule="ObjectLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qeE-h3-AVD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ik3-Hw-Xpf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gQd-md-U0s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2017-09-26 at 11.04.32 AM" translatesAutoresizingMaskIntoConstraints="NO" id="Woj-Ey-4Lp">
+                                <rect key="frame" x="0.0" y="166" width="292" height="291"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VYN-R2-t12" appends="YES" id="s3K-wU-mu2"/>
+                                    <outletCollection property="gestureRecognizers" destination="bUT-JS-CoR" appends="YES" id="84K-cj-iYl"/>
+                                    <outletCollection property="gestureRecognizers" destination="VNE-bn-lKQ" appends="YES" id="yqy-2d-IFo"/>
+                                    <outletCollection property="gestureRecognizers" destination="Q4o-29-dWQ" appends="YES" id="W2D-Sw-8tP"/>
+                                    <outletCollection property="gestureRecognizers" destination="CFO-en-ed1" appends="YES" id="rtb-9b-PmQ"/>
+                                    <outletCollection property="gestureRecognizers" destination="a4X-Fo-8h6" appends="YES" id="snm-sn-GFz"/>
+                                    <outletCollection property="gestureRecognizers" destination="mdI-8o-Dqi" appends="YES" id="a9T-vi-FI3"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gR-Nt-SgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="VYN-R2-t12">
+                    <connections>
+                        <action selector="TapGesture:" destination="Dem-mn-fbz" id="aR4-Qa-GiY"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pinchGestureRecognizer id="bUT-JS-CoR">
+                    <connections>
+                        <action selector="PinchGesture:" destination="Dem-mn-fbz" id="QRu-on-vlc"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="VNE-bn-lKQ">
+                    <connections>
+                        <action selector="RotationGesture:" destination="Dem-mn-fbz" id="Ymy-ny-1RW"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Q4o-29-dWQ">
+                    <connections>
+                        <action selector="SwipeGesture:" destination="Dem-mn-fbz" id="aPY-BR-zMA"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="CFO-en-ed1">
+                    <connections>
+                        <action selector="PanGesture:" destination="Dem-mn-fbz" id="AJm-sm-diM"/>
+                    </connections>
+                </panGestureRecognizer>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="a4X-Fo-8h6">
+                    <rectEdge key="edges" left="YES"/>
+                    <connections>
+                        <action selector="ScreenEdgePanGesture:" destination="Dem-mn-fbz" id="GXt-LJ-CMr"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="mdI-8o-Dqi">
+                    <connections>
+                        <action selector="LongPressGesture:" destination="Dem-mn-fbz" id="ZGM-r4-yNE"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1696.8" y="2058.6206896551726"/>
+        </scene>
         <!--Switch View Controller-->
         <scene sceneID="JvZ-wr-SJD">
             <objects>
@@ -1243,5 +1321,6 @@
     </scenes>
     <resources>
         <image name="11111Q33N3.jpg" width="80" height="80"/>
+        <image name="Screen Shot 2017-09-26 at 11.04.32 AM" width="1232" height="864"/>
     </resources>
 </document>

@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C0515641F7A1D8300CD1208 /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0515631F7A1D8300CD1208 /* GestureViewController.swift */; };
+		4C0515651F7A288200CD1208 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C35D1F18C20100125F09 /* Main.storyboard */; };
 		4C14C35A1F18C20100125F09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14C3591F18C20100125F09 /* AppDelegate.swift */; };
 		4C14C35C1F18C20100125F09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14C35B1F18C20100125F09 /* ViewController.swift */; };
-		4C14C35F1F18C20100125F09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C35D1F18C20100125F09 /* Main.storyboard */; };
 		4C14C3611F18C20100125F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C3601F18C20100125F09 /* Assets.xcassets */; };
 		4C14C3641F18C20100125F09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C3621F18C20100125F09 /* LaunchScreen.storyboard */; };
 		4C14C36C1F18C28B00125F09 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14C36B1F18C28B00125F09 /* SliderViewController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C0515631F7A1D8300CD1208 /* GestureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
 		4C14C3561F18C20100125F09 /* ObjectLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C14C3591F18C20100125F09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C14C35B1F18C20100125F09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			children = (
 				4C14C3591F18C20100125F09 /* AppDelegate.swift */,
 				4C14C35D1F18C20100125F09 /* Main.storyboard */,
+				4C0515631F7A1D8300CD1208 /* GestureViewController.swift */,
 				4C9A3E051F75156500C85C5A /* Picker2ViewController.swift */,
 				4C24F6701F5412FF00A45639 /* PickerViewController.swift */,
 				4CEF6FBF1F33285500FEDC78 /* ContainerViewController.swift */,
@@ -176,8 +179,8 @@
 			files = (
 				4C14C3641F18C20100125F09 /* LaunchScreen.storyboard in Resources */,
 				4C14C3611F18C20100125F09 /* Assets.xcassets in Resources */,
-				4C14C35F1F18C20100125F09 /* Main.storyboard in Resources */,
 				4C2B74A81F31E2B500AED4BE /* Slide.xib in Resources */,
+				4C0515651F7A288200CD1208 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +198,7 @@
 				4C14C36C1F18C28B00125F09 /* SliderViewController.swift in Sources */,
 				4C8C44CD1F2C8A8600A8C97F /* ProgressViewController.swift in Sources */,
 				4C14C35C1F18C20100125F09 /* ViewController.swift in Sources */,
+				4C0515641F7A1D8300CD1208 /* GestureViewController.swift in Sources */,
 				4CF256031F2B48FF0003F3F0 /* CollectionViewController.swift in Sources */,
 				4C9E41471F2F37DC0021A0B4 /* IndicatorViewController.swift in Sources */,
 				4C9A3E061F75156500C85C5A /* Picker2ViewController.swift in Sources */,
