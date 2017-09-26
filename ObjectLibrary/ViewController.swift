@@ -111,6 +111,12 @@ class ViewController: UIViewController
         self.navigationController?.pushViewController(gesturebtn, animated: true)
     }
     
+    @IBAction func SearchClick(_ sender: Any)
+    {
+        let search = self.storyboard?.instantiateViewController(withIdentifier: "SearchView") as! SearchViewController
+        self.navigationController?.pushViewController(search, animated: true)
+    }
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()

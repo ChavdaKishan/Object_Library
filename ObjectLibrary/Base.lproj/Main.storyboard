@@ -150,6 +150,14 @@
                                     <action selector="GestureClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nnz-Fq-3Ss"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piF-bB-n21">
+                                <rect key="frame" x="147" y="417" width="81" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="SearchClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xDx-pf-mGb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1211,6 +1219,34 @@
                 </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1696.8" y="2058.6206896551726"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="aRr-ZW-86z">
+            <objects>
+                <viewController storyboardIdentifier="SearchView" id="4QJ-w4-3Na" customClass="SearchViewController" customModule="ObjectLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NMx-nv-H3w"/>
+                        <viewControllerLayoutGuide type="bottom" id="oa6-0k-gNR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fqe-dH-lXc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWH-bf-Irl">
+                                <rect key="frame" x="163" y="57" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="SearchClick:" destination="4QJ-w4-3Na" eventType="touchUpInside" id="NZ7-Gr-Oz7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L1o-4b-k7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2449" y="2059"/>
         </scene>
         <!--Switch View Controller-->
         <scene sceneID="JvZ-wr-SJD">

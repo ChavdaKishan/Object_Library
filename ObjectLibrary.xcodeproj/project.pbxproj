@@ -29,6 +29,7 @@
 		4CF255D61F2B29070003F3F0 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF255D51F2B29070003F3F0 /* ScrollViewController.swift */; };
 		4CF256031F2B48FF0003F3F0 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF256021F2B48FF0003F3F0 /* CollectionViewController.swift */; };
 		4CF256071F2B4C1A0003F3F0 /* Mycell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF256061F2B4C1A0003F3F0 /* Mycell.swift */; };
+		4CF350881F7A87730008956F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF350871F7A87730008956F /* SearchViewController.swift */; };
 		4CF89E191F1CE5120011F39D /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF89E181F1CE5120011F39D /* SwitchViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		4CF255D51F2B29070003F3F0 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		4CF256021F2B48FF0003F3F0 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		4CF256061F2B4C1A0003F3F0 /* Mycell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mycell.swift; sourceTree = "<group>"; };
+		4CF350871F7A87730008956F /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4CF89E181F1CE5120011F39D /* SwitchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 			children = (
 				4C14C3591F18C20100125F09 /* AppDelegate.swift */,
 				4C14C35D1F18C20100125F09 /* Main.storyboard */,
+				4CF350871F7A87730008956F /* SearchViewController.swift */,
 				4C0515631F7A1D8300CD1208 /* GestureViewController.swift */,
 				4C9A3E051F75156500C85C5A /* Picker2ViewController.swift */,
 				4C24F6701F5412FF00A45639 /* PickerViewController.swift */,
@@ -201,6 +204,7 @@
 				4C0515641F7A1D8300CD1208 /* GestureViewController.swift in Sources */,
 				4CF256031F2B48FF0003F3F0 /* CollectionViewController.swift in Sources */,
 				4C9E41471F2F37DC0021A0B4 /* IndicatorViewController.swift in Sources */,
+				4CF350881F7A87730008956F /* SearchViewController.swift in Sources */,
 				4C9A3E061F75156500C85C5A /* Picker2ViewController.swift in Sources */,
 				4C2B74AA1F31E2CF00AED4BE /* Slide.swift in Sources */,
 				4CEF6FC01F33285500FEDC78 /* ContainerViewController.swift in Sources */,
